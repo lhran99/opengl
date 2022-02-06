@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/start_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="start"
+        app:layout_constraintTop_toBottomOf="@+id/surface_view"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="165dp"
+        android:layout_height="277dp"
+        android:layout_marginStart="108dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <Button
+        android:id="@+id/stop_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="52dp"
+        android:text="stop"
+        app:layout_constraintStart_toEndOf="@+id/start_capture"
+        app:layout_constraintTop_toBottomOf="@+id/surface_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
